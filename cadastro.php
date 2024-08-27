@@ -43,28 +43,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 // Fecha a conexão
 $conexao->close();
 ?>
-
-<!DOCTYPE html>
-<html lang="pt-br">
-<?php include_once 'includes/header.php'; ?>
-<body>
-    <h2>Cadastro de Cliente</h2>
-    <form action="index.php" method="post">
-        <div>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-        </div>
-        <div>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div>
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha" required>
-        </div>
-        <div>
-            <button type="submit">Cadastrar</button>
-        </div>
-    </form>
-</body>
-</html>
