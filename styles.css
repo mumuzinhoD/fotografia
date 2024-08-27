@@ -1,0 +1,313 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ajuste da barra lateral */
+.barra-lateral {
+    width: 120px; /* Largura reduzida */
+    background-color: #333;
+    color: white;
+    position: fixed;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /* Centraliza os itens horizontalmente */
+    padding: 20px 5px; /* Ajuste o padding para o novo tamanho */
+    z-index: 1000;
+}
+
+
+/* Ajuste do conteúdo para não sobrepor a barra lateral */
+.conteudo {
+    margin-left: 170px; /* Adiciona espaço à esquerda para evitar sobreposição */
+    padding: 20px;
+}
+
+/* Ajuste da galeria de imagens */
+barra-lateral {
+    width: 180px; /* Ajuste a largura da barra lateral */
+    background-color: #333;
+    color: white;
+    position: fixed;
+    height: 100%;
+    padding: 20px;
+}
+
+.conteudo {
+    margin-left: 200px; /* Ajuste conforme a largura da barra lateral */
+    padding: 20px;
+}
+
+.grade-imagens {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas de tamanho igual */
+    gap: 10px; /* Espaço entre as imagens */
+    padding: 10px; /* Adiciona padding ao redor da grade */
+    max-width: 1000px; /* Define uma largura máxima para a grade de imagens */
+    margin: 0 auto; /* Centraliza a grade de imagens na página */
+}
+
+.imagem-container {
+    position: relative;
+    overflow: hidden; /* Garante que o zoom não ultrapasse o contêiner */
+    height: 200px; /* Define uma altura fixa para manter o alinhamento */
+    display: flex; /* Utiliza flexbox para centralizar a imagem */
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra o contêiner sem distorção */
+    transition: transform 0.3s ease; /* Suaviza o efeito de zoom */
+}
+
+.imagem-container:hover img {
+    transform: scale(1.1); /* Zoom de 10% */
+}
+
+.imagem-container .legenda {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente para a legenda */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease; /* Suaviza o aparecimento da legenda */
+    opacity: 0;
+}
+
+.imagem-container:hover .legenda {
+    opacity: 1; /* Mostra a legenda ao passar o mouse */
+}barra-lateral {
+    width: 180px; /* Ajuste a largura da barra lateral */
+    background-color: #333;
+    color: white;
+    position: fixed;
+    height: 100%;
+    padding: 20px;
+}
+
+.conteudo {
+    margin-left: 200px; /* Ajuste conforme a largura da barra lateral */
+    padding: 20px;
+}
+
+.grade-imagens {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas de tamanho igual */
+    gap: 10px; /* Espaço entre as imagens */
+    padding: 10px; /* Adiciona padding ao redor da grade */
+    max-width: 1000px; /* Define uma largura máxima para a grade de imagens */
+    margin: 0 auto; /* Centraliza a grade de imagens na página */
+}
+
+.imagem-container {
+    position: relative;
+    overflow: hidden; /* Garante que o zoom não ultrapasse o contêiner */
+    height: 200px; /* Define uma altura fixa para manter o alinhamento */
+    display: flex; /* Utiliza flexbox para centralizar a imagem */
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra o contêiner sem distorção */
+    transition: transform 0.3s ease; /* Suaviza o efeito de zoom */
+}
+
+.imagem-container:hover img {
+    transform: scale(1.1); /* Zoom de 10% */
+}
+
+.imagem-container .legenda {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente para a legenda */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 0.3s ease; /* Suaviza o aparecimento da legenda */
+    opacity: 0;
+}
+
+.imagem-container:hover .legenda {
+    opacity: 1; /* Mostra a legenda ao passar o mouse */
+}
+
+
+.logo, .upload, .perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Garante que os botões se ajustem à largura da barra */
+}
+
+.logo button,
+.upload button {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #444;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.logo button:hover,
+.upload button:hover {
+    background-color: #555;
+}
+
+.perfil a {
+    display: block;
+    width: 100%; /* Ajusta a largura da área clicável */
+    text-align: center;
+}
+
+.perfil img {
+    width: 50px; /* Reduzido para se ajustar à largura da barra lateral */
+    height: 50px;
+    border-radius: 50%; /* Torna a imagem circular */
+    border: 2px solid #fff; /* Borda branca ao redor da imagem */
+    object-fit: cover; /* Garante que a imagem se ajuste ao círculo sem distorção */
+    cursor: pointer; /* Indica que a imagem é clicável */
+}
+
+.botao-home:hover, 
+.botao-upload:hover, 
+.perfil button:hover {
+    background-color: #555;
+}
+
+.perfil a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #444;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.perfil a:hover {
+    background-color: #555;
+}
+
+
+.conteudo {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+button[type="submit"], .botao-home, .botao-upload {
+    transition: background-color 0.3s ease;
+}
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+.centralizar-pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.barra-pesquisa {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.barra-pesquisa input[type="text"] {
+    width: 100%;
+    padding: 10px 40px 10px 10px; /* Espaço para o botão dentro do campo */
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+
+.barra-pesquisa .botao-pesquisa {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.barra-pesquisa .botao-pesquisa img {
+    width: 20px;
+    height: 20px;
+}
+
+.barra-pesquisa .botao-pesquisa:hover {
+    background-color: #ddd;
+    border-radius: 50%;
+}
+.grade-imagens {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas de tamanho igual */
+    gap: 10px; /* Espaço entre as imagens */
+}
+
+.grade-imagens img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Borda arredondada opcional */
+}
