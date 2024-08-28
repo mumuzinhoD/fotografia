@@ -80,7 +80,7 @@
 <body>
     <div class="container">
         <h2>Cadastro de Cliente</h2>
-        <form action="cadastrar_cliente.php" method="post">
+        <form action="back/cadastro.php" method="post">
             <div class="form-group">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>

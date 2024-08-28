@@ -1,13 +1,5 @@
 <?php
-// Configuração do banco de dados
-$servidor = 'localhost';
-$usuario = 'usuario';
-$senha = 'senha';
-$banco_de_dados = 'banco_de_dados';
-
-// Conexão com o banco de dados
-$conexao = new mysqli($servidor, $usuario, $senha, $banco_de_dados);
-
+include_once "../includes/conexao.php";
 // Verifique a conexão
 if ($conexao->connect_error) {
     die("Falha na conexão: " . $conexao->connect_error);
