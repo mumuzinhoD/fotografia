@@ -1,8 +1,8 @@
 <?php
-include_once "../includes/conexao.php";
+include_once "../includes/connect.php";
 // Verifique a conexão
-if ($conexao->connect_error) {
-    die("Falha na conexão: " . $conexao->connect_error);
+if ($connect->connect_error) {
+    die("Falha na conexão: " . $connect->connect_error);
 }
 
 // Inicia a sessão
@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Insere os dados no banco de dados
     $query = "INSERT INTO clientes (nome, email, senha) VALUES ('$nome', '$email', '$senha_hash')";
-    if ($conexao->query($query) === TRUE) {
+    if ($connect->query($query) === TRUE) {
         // Salva as informações na sessão
         $_SESSION['nome'] = $nome;
         $_SESSION['email'] = $email;
@@ -28,10 +28,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header("Location: perfil.php");
         exit();
     } else {
-        echo "Erro ao cadastrar: " . $conexao->error;
+        echo "Erro ao cadastrar: " . $connect->error;
     }
 }
 
 // Fecha a conexão
-$conexao->close();
+$connect->close();
 ?>
