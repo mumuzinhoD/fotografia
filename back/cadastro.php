@@ -1,5 +1,6 @@
 <?php
-include_once "../includes/connect.php";
+include_once '../includes/conexao.php'; // Verifique se o nome do arquivo e o caminho estão corretos
+
 // Verifique a conexão
 if ($connect->connect_error) {
     die("Falha na conexão: " . $connect->connect_error);
