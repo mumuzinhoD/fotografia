@@ -75,6 +75,10 @@
             outline: none;
             border-color: #4CAF50;
         }
+        .entrar {
+            top: 500px;
+        }
+        
     </style>
 </head>
 <body>
@@ -94,6 +98,11 @@
                 <input type="password" id="senha" name="senha" required>
             </div>
             <button type="submit">Cadastrar</button>
+            <br>
+            <hr>
+            <div class="entrar">
+                <a href="login.php">Entrar</a>
+            </div>
         </form>
     </div>
 </body>

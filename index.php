@@ -11,6 +11,10 @@
         <div class="perfil">
             <a href="cadastro_usuario.php">Perfil</a>
         </div>
+        
+        <div class="perfil">
+            <a href="cadastro_usuario.php">Cadastre-se</a>
+        </div>
     </div>
     <div class="conteudo">
         <div class="barra-pesquisa">

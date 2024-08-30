@@ -49,7 +49,7 @@ if ($result->num_rows > 0) {
     <h1>Perfil do Cliente</h1>
     <p>Nome: <?php echo htmlspecialchars($usuario['nome']); ?></p>
     <p>E-mail: <?php echo htmlspecialchars($usuario['email']); ?></p>
-    <p>Data de Cadastro: <?php echo htmlspecialchars($usuario['data-cadastro']); ?></p>
+    
     <a href="index.php">Voltar para Cadastro</a>
 </body>
 </html>
