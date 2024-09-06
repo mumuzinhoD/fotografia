@@ -9,7 +9,7 @@
             <button class="botao-upload" onclick="mostrarUpload()">+</button>
         </div>
         <div class="perfil">
-            <a href="cadastro_usuario.php">Perfil</a>
+            <a href="perfil.php">Perfil</a>
         </div>
         
         <div class="perfil">
@@ -114,5 +114,6 @@
         </div>
     </div>
     <script src="script.js"></script>
+
+
 </body></html>
-    
