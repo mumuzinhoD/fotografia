@@ -1,5 +1,6 @@
 function mostrarUpload() {
     alert("Funcionalidade de Upload Aqui!");
+    
 }
 
 function mostrarPerfil() {
