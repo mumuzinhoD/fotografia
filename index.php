@@ -6,7 +6,7 @@
             <button class="botao-home"></button>
         </div>
         <div class="upload">
-            <button class="botao-upload" onclick="mostrarUpload()">+</button>
+        <a href="upload.php"><button class="botao-upload">+</button></a>
         </div>
         <div class="perfil">
             <a href="perfil.php">Perfil</a>
